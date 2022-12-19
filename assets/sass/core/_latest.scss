@@ -1,0 +1,50 @@
+.latest{
+    .latest-info{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 20px;
+        border-radius: 3px;
+        border-top: 2px solid var(--primary-color);
+        background-color: #fff;
+        position: relative;
+        transition: 0.3s all ease-in-out;
+        margin-bottom:40px;
+        svg{
+            color:  rgb(188, 190, 192);
+        }
+        .num__{
+            color:  rgb(188, 190, 192);
+        }
+        .badge{
+            background-color: var(--primary-color);
+        }
+        .latest-desc{
+            margin-top: 25px;
+            .latest_title{
+                font-size: 22px;
+                margin-bottom: 15px;
+                color: var(--third-color);
+            }
+            p{
+                margin-bottom: 15px !important;
+                color: var(--third-color)
+            }
+            i{
+                margin-inline-end: 5px;
+            }
+        }
+        .counter{
+            span{
+                font-weight: bold;
+                color: var(--primary-color);
+                font-size:14px;
+                &:first-of-type{
+                    font-size:30px;
+                    height: 35px;
+                }
+            }
+        }
+        &:hover{
+            transform: translateY(-15px)
+        }
+    }
+}

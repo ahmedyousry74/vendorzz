@@ -1,0 +1,106 @@
+
+footer {
+    background-color: #030305;
+    padding: 80px 0px 20px;
+    position: relative;
+    .footer-logo {
+        border-bottom: 1px solid #353537;
+        margin-bottom: 35px;
+        padding-bottom: 22px;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 40px
+            img {
+                width: 150px;
+            }
+        }
+    }
+    h4 {
+        color: #fff;
+        margin-bottom: 25px
+    }
+    p {
+        color: #888;
+        line-height: 1.929;
+        margin-bottom: 10px;
+    }
+    .social-links {
+        margin-top: 25px !important;
+        li {
+            display: inline-block;
+            padding: 0 0 0 30px;
+            transition: all 0.5s ease;
+            a {
+                text-decoration: none;
+                color: #fff
+            }
+            svg {
+                color: #fff;
+                transition: all 0.5s ease;
+                &:hover {
+                    transform: rotate(-360deg);
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+    .footer-contact {
+        li {
+            margin-bottom: 20px;
+        }
+        a{
+            color: #888;
+        }
+    }
+    .footer-links{
+        li {
+            display: block;
+            margin-bottom: 20px;
+            a{
+                color: #888;
+            }
+        }
+    }
+    li {
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            margin-right: 20px
+        }
+    }
+    form {
+        position: relative;
+        input {
+            padding: 8px 22px;
+            font-size: 13px;
+            border-radius: 50px;
+            border: 2px solid #fff;
+            width: 100%;
+            outline: none;
+        }
+        button {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 60px;
+            height: 39px;
+            background-color: var(--primary-color);
+            text-align: center;
+            color: #fff;
+            border-radius: 50px;
+            line-height: 10px;
+            border: 2px solid var(--primary-color);
+        }
+    }
+    hr {
+        background-color: #494d58;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    .copyright {
+        color: #fff;
+        a {
+            color: #888;
+        }
+    }
+}
