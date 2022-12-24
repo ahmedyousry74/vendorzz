@@ -967,6 +967,16 @@ footer .copyright a {
   width: 150px;
 }
 
+.custom_input {
+  height: 55px !important;
+}
+
+.custom_input:focus, .custom_input:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: var(--primary-color);
+}
+
 .theme {
   --primary-color: #186db5;
   --second-color: #0f487d;
@@ -1364,5 +1374,112 @@ header .video-icon .btn-icon:after {
 .latest .dropdown__select .dropdown-menu ::-webkit-scrollbar {
   width: 4px;
   background-color: transparent;
+}
+
+.authentication {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.authentication:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.822);
+  z-index: 8;
+}
+
+.authentication .wrap_page {
+  width: 100%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  margin-top: 120px;
+  background-color: #fff;
+  z-index: 9;
+  position: relative;
+}
+
+@media (width: 580px) {
+  .authentication .wrap_page {
+    margin-top: 50px;
+  }
+}
+
+.authentication .wrap_page form button {
+  background-color: var(--primary-color);
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.authentication .wrap_page form button:hover {
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+.authentication .text-wrap, .authentication .form-wrap {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .authentication .text-wrap, .authentication .form-wrap {
+    width: 100%;
+  }
+}
+
+.authentication .text-wrap {
+  background: var(--primary-color);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, var(--primary-color)), color-stop(100%, #13596459));
+  background: linear-gradient(135deg, var(--primary-color) 0%, #13596459 100%);
+  color: #fff;
+}
+
+.authentication .text-wrap .text h2 {
+  font-weight: 900;
+  color: #fff;
+}
+
+.authentication .text-wrap a {
+  color: red;
+  border-color: #fff;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.authentication .text-wrap a:hover {
+  border-color: var(--primary-color);
+}
+
+.authentication .form-floating > label {
+  right: 0;
+  left: auto;
+}
+
+.authentication .forget_pass a {
+  color: var(--third-color);
+}
+
+.authentication .forget_pass a:hover {
+  color: var(--primary-color);
+}
+
+.authentication.forgetPass_page .form-wrap {
+  width: 100%;
+}
+
+.authentication.as_buyer .order-md-last {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 50%;
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */

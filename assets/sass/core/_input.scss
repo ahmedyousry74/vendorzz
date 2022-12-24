@@ -1,0 +1,7 @@
+.custom_input{
+    height: 55px !important;
+    &:focus,&:hover{
+        box-shadow: none;
+        border-color: var(--primary-color);
+    }
+}
