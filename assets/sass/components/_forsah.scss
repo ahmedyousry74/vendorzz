@@ -1,0 +1,27 @@
+.forsah{
+    padding: 35px 0;
+    .forsah_card{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        transition: 0.3s all ease-in-out;
+        position: relative;
+        h3{
+            color: var(--third-color);
+            font-weight: bold;
+        }
+        p{
+            color: #666;
+            width: 320px;
+            text-align: center;
+        }
+        &:hover{
+            border: 1px solid var(--primary-color);
+            transform: translateY(-5px);
+        }
+    }
+}

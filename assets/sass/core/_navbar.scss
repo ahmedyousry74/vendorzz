@@ -88,6 +88,41 @@
       margin-top: 15px;
     }
   }
+  .profile{
+    margin-top: 15px;
+    margin-inline-start: 10px;
+    a{
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 1px 5px;
+      border-radius: 50%;
+      svg{
+        color: #fff;
+      }
+    }
+  }
+  &.nav_layout_auth{
+    position: relative;
+    top:0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .nav-link{
+      color: var(--third-color) !important;
+      &.active{
+        color: var(--primary-color) !important;
+      }
+    }
+    .login_btn{
+      color: #fff !important;
+    }
+    .profile{
+      a{
+        color: var(--third-color) !important;
+        border: 1px solid var(--third-color);
+        svg{
+          color: var(--third-color);
+        }
+      }
+  }
 }
 .offcanvas-body {
   display: flex;
@@ -129,5 +164,6 @@
   .nav-item {
     margin-bottom: 25px;
   }
+}
 }
 /* end navbar */

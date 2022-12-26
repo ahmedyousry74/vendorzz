@@ -1,0 +1,152 @@
+$color_1: #555555;
+$color_2: #5bc0de;
+$color_3: #333;
+$border-bottom-color_1: #e0e0e0;
+$border-bottom-color_2: transparent;
+$border-bottom-color_3: #5bc0de;
+
+.wizard {
+	margin: 20px auto;
+	background: #fff;
+	.nav-tabs {
+		position: relative;
+		margin: 40px auto;
+		margin-bottom: 0;
+		border-bottom-color: $border-bottom-color_1;
+		>li.active {
+			>a {
+				color: $color_1;
+				cursor: default;
+				border: 0;
+				border-bottom-color: $border-bottom-color_2;
+				&:hover {
+					color: $color_1;
+					cursor: default;
+					border: 0;
+					border-bottom-color: $border-bottom-color_2;
+				}
+				&:focus {
+					color: $color_1;
+					cursor: default;
+					border: 0;
+					border-bottom-color: $border-bottom-color_2;
+				}
+			}
+		}
+		>li {
+			width: 25%;
+			a {
+				width: 70px;
+				height: 70px;
+				margin: 20px auto;
+				border-radius: 100%;
+				padding: 0;
+				&:hover {
+					background: transparent;
+				}
+			}
+		}
+	}
+	>div.wizard-inner {
+		position: relative;
+	}
+	li.active {
+		span.round-tab {
+			background: #fff;
+			border: 2px solid #5bc0de;
+			i {
+				color: $color_2;
+			}
+		}
+		&:after {
+			content: " ";
+			position: absolute;
+			left: 46%;
+			opacity: 1;
+			margin: 0 auto;
+			bottom: 0px;
+			border: 10px solid transparent;
+			border-bottom-color: $border-bottom-color_3;
+		}
+	}
+	li {
+		&:after {
+			content: " ";
+			position: absolute;
+			left: 46%;
+			opacity: 0;
+			margin: 0 auto;
+			bottom: 0px;
+			border: 5px solid transparent;
+			border-bottom-color: $border-bottom-color_3;
+			transition: 0.1s ease-in-out;
+		}
+	}
+	.tab-pane {
+		position: relative;
+		padding-top: 50px;
+	}
+	h3 {
+		margin-top: 0;
+	}
+}
+.connecting-line {
+	height: 2px;
+	background: #e0e0e0;
+	position: absolute;
+	width: 80%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	z-index: 1;
+}
+span.round-tab {
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	display: inline-block;
+	border-radius: 100px;
+	background: #fff;
+	border: 2px solid #e0e0e0;
+	z-index: 2;
+	position: relative;
+	left: 0;
+	text-align: center;
+	font-size: 25px;
+	i {
+		color: $color_1;
+	}
+	&:hover {
+		color: $color_3;
+		border: 2px solid #333;
+	}
+}
+@media (max-width : 585px ) {
+	.wizard {
+		width: 90%;
+		height: auto !important;
+		.nav-tabs {
+			>li {
+				a {
+					width: 50px;
+					height: 50px;
+					line-height: 50px;
+				}
+			}
+		}
+		li.active {
+			&:after {
+				content: " ";
+				position: absolute;
+				right: 35%;
+			}
+		}
+	}
+	span.round-tab {
+		font-size: 16px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+}

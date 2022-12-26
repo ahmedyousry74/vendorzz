@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -112,70 +112,96 @@
     </nav>
     <!-- end navbar -->
 
-    <!-- start As buyer -->
-    <div class="as-buyer py-5">
+    <!-- start wizard form -->
+    <div class="complete-forsah">
         <div class="container">
-            <h2 class="section_title"> تسجيل كـ مشتري </h2>
             <div class="row">
-                <div class="col-md-6">
-                    <div>
-                        <ul>
-                            <li>للتسجيل كشركة كبرى، يجب أن يكون عدد الموظفين أكثر من 250 موظف والدخل السنوي أكثر من 200
-                                مليون ريال.( يتوجب على المنشئآت الصغيرة والمتوسطة اتباع نفس طريقة التسجيل)</li>
-                            <li>إذا تطابق المؤهلات مع منشأتك، سيتوجب مليء ورفع نموذج التسجيل. بعدها سيتم إنشاء حساب
-                                للمنشأة.</li>
-                            <li>سيتمكن المستخدم من نشر الفرص
-                                مناقصة
-                                طلب شراء</li>
-                            <li>عند نشر الفرصة ، سيتمكن الموردين من طرح عروض أسعارهم. بعدها بامكان طارح الفرصة كشف
-                                ومقارنة عروض الأسعار ومعرفة معلومات الموردين والذي يتضمن تقييم المورد الحالي.</li>
-                            <li>بعد مقارنة عروض الأسعار، سيتمكن ناشر الفرصة من تعميد السعر المناسب.</li>
-                        </ul>
+                <section>
+                    <div class="wizard">
+                        <div class="wizard-inner">
+                            <!-- <div class="connecting-line"></div> -->
+                            <ul class="nav nav-tabs" role="tablist">
+
+                                <li role="presentation" class="active">
+                                    <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Connect">
+                                        <span class="round-tab">
+                                            <i class="far fa-folder"></i>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li role="presentation" class="disabled">
+                                    <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab"
+                                        title="Transform">
+                                        <span class="round-tab">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li role="presentation" class="disabled">
+                                    <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="MAP">
+                                        <span class="round-tab">
+                                            <i class="fas fa-images"></i>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li role="presentation" class="disabled">
+                                    <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab"
+                                        title="Schedule">
+                                        <span class="round-tab">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <form role="form">
+                            <div class="tab-content">
+                                <div class="tab-pane active" role="tabpanel" id="step1">
+                                    <h3>Step 1</h3>
+                                    <p>This is step 1</p>
+                                    <ul class="list-inline pull-right">
+                                        <li><button type="button" class="btn btn-primary next-step">Save and
+                                                continue</button></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="step2">
+                                    <h3>Step 2</h3>
+                                    <p>This is step 2</p>
+                                    <ul class="list-inline pull-right">
+                                        <li><button type="button" class="btn btn-default prev-step">Previous</button>
+                                        </li>
+                                        <li><button type="button" class="btn btn-primary next-step">Save and
+                                                continue</button></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="step3">
+                                    <h3>Step 3</h3>
+                                    <p>This is step 3</p>
+                                    <ul class="list-inline pull-right">
+                                        <li><button type="button" class="btn btn-default prev-step">Previous</button>
+                                        </li>
+                                        <li><button type="button" class="btn btn-default next-step">Skip</button></li>
+                                        <li><button type="button" class="btn btn-primary btn-info-full next-step">Save
+                                                and continue</button></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="complete">
+                                    <h3>Complete</h3>
+                                    <p>You have successfully completed all steps.</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
                     </div>
-                    <form action="" class="mt-4">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control custom_input" id="floatingInput"
-                                placeholder="name">
-                            <label for="floatingInput" class="">الإسم <span style="color: red;">*</span></label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control custom_input" id="floatingInput"
-                                placeholder="name@example.com">
-                            <label for="floatingInput" class="">البريدالإلكتروني <span style="color: red;">*</span></label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control custom_input" id="floatingInput"
-                                placeholder="name@example.com">
-                            <label for="floatingInput" class="">الشركة <span style="color: red;">*</span></label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control custom_input" id="floatingInput"
-                                placeholder="name@example.com">
-                            <label for="floatingInput" class="">المنصب <span style="color: red;">*</span></label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control custom_input" id="floatingInput"
-                                placeholder="name@example.com">
-                            <label for="floatingInput" class="">الهاتف <span style="color: red;">*</span></label>
-                        </div>
-                        <div class="down_file d-flex justify-content-start flex-column align-items-start gap-2 mb-3">
-                            <span> تحميل قالب الإشتراك  <span style="color: red;">*</span></span>
-                            <button class="btn btn__custom__two hvr-sweep-to-right"> تحميل قالب الإشتراك <i class="fas fa-download"></i></button>
-                        </div>
-                        <div class="upload_file d-flex justify-content-start flex-column align-items-start gap-2 mb-3">
-                            <span>  نموذج الإشتراك  <span style="color: red;">*</span></span>
-                            <button class="btn btn__custom__two hvr-sweep-to-right"> اختر الملف <i class="fas fa-file-upload"></i> </button>
-                        </div>
-                        <button class="btn send_" type="button"> تقديم </button>
-                    </form>
-                </div>
-                <div class="col-md-6">
-                    <img src="assets/images//Product hunt-cuate.svg" alt="">
-                </div>
+                </section>
             </div>
         </div>
     </div>
-    <!-- end As buyer -->
+    <!-- end wizard form -->
+
 
     <!-- start footer -->
     <footer>
@@ -265,6 +291,7 @@
     </footer>
     <!-- end footer -->
 
+
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -274,6 +301,9 @@
     <script src="assets/js/mixitup.min.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script>
+
+    </script>
 
 </body>
 

@@ -94,14 +94,25 @@
             width: 100%
         }   
     }
-    &.as_buyer{
-        .order-md-last{
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: auto;
-            width: 50%;
-            position: relative;
+}
+
+.as-buyer{
+    .form-floating>label{
+        right: 0;
+        left: auto;
+    }
+    img{
+        width: 100%
+    }
+    .send_{
+        background-color:  var(--primary-color);
+        padding: 8px 15px;
+        color: #fff;
+        border-radius: 0.25rem;
+        width: 100%;
+        &:hover{
+            border-color: var(--primary-color);
+            color: #fff;
         }
     }
 }

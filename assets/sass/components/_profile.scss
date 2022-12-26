@@ -1,0 +1,29 @@
+.profile{
+    .nav-tabs{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+        .nav-link{
+            &.active,&:hover{
+                border-color: transparent !important;
+                border: 0 !important;
+                border-bottom: 2px solid var(--primary-color) !important;
+            }    
+        }
+    }
+    #nav-baseInfo,#nav-identity,#nav-facility{
+        .send{
+            background-color:  var(--primary-color);
+            padding: 8px 15px;
+            color: #fff;
+            border-radius: 0.25rem;
+            width:150px;
+            &:hover{
+                border-color: var(--primary-color);
+                color: #fff;
+            }
+        }
+    }
+}
