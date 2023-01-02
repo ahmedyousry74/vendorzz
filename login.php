@@ -28,7 +28,7 @@
                             <div class="text w-100">
                                 <h2>مرحبا بك في فيندرز</h2>
                                 <p class="mt-2">ليس لديك حساب ؟</p>
-                                <a href="signup.html" class="hvr-sweep-to-right btn__custom__two btn-white btn-outline-white"> إنشاء حساب </a>
+                                <a href="signup.php" class="hvr-sweep-to-right btn__custom__two btn-white btn-outline-white"> إنشاء حساب </a>
                             </div>
                         </div>
                         <div class="form-wrap p-4 p-lg-5">
@@ -54,7 +54,7 @@
                                         <label class="form-check-label" for="exampleCheck1"> تذكرني </label>
                                     </div>
                                     <div class="forget_pass">
-                                        <a href="forget-password.html"> نسيت كلمة السر ؟ </a>
+                                        <a href="forget-password.php"> نسيت كلمة السر ؟ </a>
                                     </div>
                                 </div>
                                 <button type="button" class="btn btn-white btn-outline-white"> دخول </button>

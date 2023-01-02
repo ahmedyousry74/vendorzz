@@ -3,7 +3,7 @@ echo '
     <!-- start navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="index.html"> <img src="assets/images/3d9f58d0-a33e-4675-bda1-42d78d42a344.jpg" alt="logo" loading="lazy"
+            <a class="navbar-brand text-white" href="index.php"> <img src="assets/images/3d9f58d0-a33e-4675-bda1-42d78d42a344.jpg" alt="logo" loading="lazy"
                     width="80" height="80">
             </a>
             <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -21,19 +21,19 @@ echo '
                 <div class="offcanvas-body p-lg-0">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                            <a class="nav-link active" aria-current="page" href="index.php">الرئيسية</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href=""> الخدمات </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="create-forsah.html"> إدارة فرصة </a>
+                            <a class="nav-link" aria-current="page" href="create-forsah.php"> إدارة فرصة </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link login_btn" aria-current="page" href="login.html"> تسجيل دخول </a>
+                            <a class="nav-link login_btn" aria-current="page" href="login.php"> تسجيل دخول </a>
                         </li>
                         <li class="profile">
-                            <a href="profile.html">
+                            <a href="profile.php">
                                 <i class="far fa-user"></i>
                             </a>
                         </li>

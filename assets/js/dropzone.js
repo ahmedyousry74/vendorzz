@@ -3552,7 +3552,7 @@ var drawImageIOSFix = function drawImageIOSFix(ctx, img, sx, sy, sw, sh, dx, dy,
   return ctx.drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh / vertSquashRatio);
 }; // Based on MinifyJpeg
 // Source: http://www.perry.cz/files/ExifRestorer.js
-// http://elicon.blog57.fc2.com/blog-entry-206.html
+// http://elicon.blog57.fc2.com/blog-entry-206.php
 
 
 var ExifRestore =

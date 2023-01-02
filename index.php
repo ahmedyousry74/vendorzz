@@ -215,7 +215,7 @@
                                     <div class="postcard__preview-txt">للتسجيل كشركة كبرى، يجب أن يكون عدد الموظفين أكثر من
                                         250 موظف والدخل السنوي أكثر من 200 مليون ريال.( يتوجب على المنشئآت الصغيرة والمتوسطة
                                         اتباع نفس طريقة التسجيل)</div>
-                                    <a href="as-buyer.html" class="hvr-sweep-to-right btn__custom__two"> إشترك كـ مشتري </a>
+                                    <a href="as-buyer.php" class="hvr-sweep-to-right btn__custom__two"> إشترك كـ مشتري </a>
                                 </div>
                             </div>
                         </article>
@@ -233,7 +233,7 @@
                                     <div class="postcard__preview-txt"> بامكانكم الوصول لجميع طلبات الشراء (المباشرة
                                         والمناقصات) بجميع المعلومات المطلوبة متضمنا الشركات الناشرة وتفاصيل الفرص وقيمتها.
                                     </div>
-                                    <a href="as-supplier.html" class="hvr-sweep-to-right btn__custom__two"> إشترك كـ مورد  </a>
+                                    <a href="as-supplier.php" class="hvr-sweep-to-right btn__custom__two"> إشترك كـ مورد  </a>
                                 </div>
                             </div>
                         </article>

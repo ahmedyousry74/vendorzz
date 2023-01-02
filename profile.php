@@ -65,7 +65,7 @@
     <nav class='navbar navbar-expand-lg navbar-light sticky-top bg-white nav_layout_auth'>
         <!-- class (nav_layout_auth) required in this page  -->
         <div class='container-fluid'>
-            <a class='navbar-brand text-white' href='index.html'> <img
+            <a class='navbar-brand text-white' href='index.php'> <img
                     src="assets/images/3d9f58d0-a33e-4675-bda1-42d78d42a344.jpg" alt="logo" loading="lazy" width="80"
                     height="80">
             </a>
@@ -84,19 +84,19 @@
                 <div class='offcanvas-body p-lg-0'>
                     <ul class='navbar-nav'>
                         <li class='nav-item'>
-                            <a class='nav-link active' aria-current='page' href='index.html'>الرئيسية</a>
+                            <a class='nav-link active' aria-current='page' href='index.php'>الرئيسية</a>
                         </li>
                         <li class='nav-item'>
                             <a class='nav-link' aria-current='page' href=''> الخدمات </a>
                         </li>
                         <li class='nav-item'>
-                            <a class='nav-link' aria-current='page' href='create-forsah.html'> إدارة فرصة </a>
+                            <a class='nav-link' aria-current='page' href='create-forsah.php'> إدارة فرصة </a>
                         </li>
                         <li class='nav-item'>
-                            <a class='nav-link login_btn' aria-current='page' href='login.html'> تسجيل دخول </a>
+                            <a class='nav-link login_btn' aria-current='page' href='login.php'> تسجيل دخول </a>
                         </li>
                         <li class="profile">
-                            <a href="profile.html">
+                            <a href="profile.php">
                                 <i class="far fa-user"></i>
                             </a>
                         </li>
@@ -246,7 +246,7 @@
     <footer>
         <div class="container ">
             <div class="footer-logo ">
-                <a href="index.html"> <img src="assets/images/3d9f58d0-a33e-4675-bda1-42d78d42a344.jpg" alt=""
+                <a href="index.php"> <img src="assets/images/3d9f58d0-a33e-4675-bda1-42d78d42a344.jpg" alt=""
                         width="100" height="100"> </a>
             </div>
             <div class="row ">
@@ -289,19 +289,19 @@
                         <h4>لينكات سريعة</h4>
                         <ul>
                             <li class="item ">
-                                <a href="index.html "> الرئيسية</a>
+                                <a href="index.php "> الرئيسية</a>
                             </li>
                             <li class="item ">
-                                <a href="about-us.html "> من نحن </a>
+                                <a href="about-us.php "> من نحن </a>
                             </li>
                             <li class="item ">
-                                <a href="services.html "> خدماتنا</a>
+                                <a href="services.php "> خدماتنا</a>
                             </li>
                             <li class="item ">
-                                <a href="contact-us.html "> اتصل بنا</a>
+                                <a href="contact-us.php "> اتصل بنا</a>
                             </li>
                             <li class="item ">
-                                <a href="projects.html ">أعمالنا</a>
+                                <a href="projects.php ">أعمالنا</a>
                             </li>
                         </ul>
                     </div>
@@ -324,7 +324,7 @@
             </div>
             <hr>
             <p class="text-center copyright ">جميع الحقوق محفوظة لدى
-                <a href="index.html"> فيندرز </a>
+                <a href="index.php"> فيندرز </a>
             </p>
         </div>
     </footer>
