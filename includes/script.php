@@ -5,4 +5,5 @@
     <script src="assets/js/all.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/jquery.steps.js"></script>
     <script src="assets/js/main.js"></script>
