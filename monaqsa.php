@@ -279,6 +279,68 @@
                     <section>
                         <h3>بيانات الصنف</h3>
                         <div class="row">
+                            <div class="col-md-6">
+                                <label class="mb-2" style="color:var(--third-color)"> شهادة ذكاة </label>
+                                <div class="input-group mb-3">
+                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                    <label class="input-group-text" for="inputGroupFile02">رفع</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="mb-2" style="color:var(--third-color)"> خلو طرف من الضرائب</label>
+                                <div class="input-group mb-3">
+                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                    <label class="input-group-text" for="inputGroupFile02">رفع</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="mb-2" style="color:var(--third-color)"> اخر تقرير مالي </label>
+                                <div class="input-group mb-3">
+                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                    <label class="input-group-text" for="inputGroupFile02">رفع</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="mb-2" style="color:var(--third-color)"> اخر تقرير مالي </label>
+                                <div class="input-group mb-3">
+                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                    <label class="input-group-text" for="inputGroupFile02">رفع</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-holder mb-2">
+                                    <div class="dropdown dropdown__select">
+                                        <a class="btn dropdown-toggle custom_input" href="#" role="button" id="dropdownMenuLink"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            طريقة الدفع 
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">اختيار 1</a></li>
+                                            <li><a class="dropdown-item" href="#"> اختبار 2 </a></li>
+                                            <li><a class="dropdown-item" href="#"> اختيار3  </a></li>
+                                            <li><a class="dropdown-item" href="#">اختيار 1</a></li>
+                                            <li><a class="dropdown-item" href="#"> اختبار 2 </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-holder mb-2">
+                                    <div class="dropdown dropdown__select">
+                                        <a class="btn dropdown-toggle custom_input" href="#" role="button" id="dropdownMenuLink"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            مدة التسليم 
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">اختيار 1</a></li>
+                                            <li><a class="dropdown-item" href="#"> اختبار 2 </a></li>
+                                            <li><a class="dropdown-item" href="#"> اختيار3  </a></li>
+                                            <li><a class="dropdown-item" href="#">اختيار 1</a></li>
+                                            <li><a class="dropdown-item" href="#"> اختبار 2 </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-12">
                                 <div class="form-holder">
                                     <div class="dropdown dropdown__select">
