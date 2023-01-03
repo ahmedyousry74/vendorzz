@@ -1013,7 +1013,7 @@ footer .copyright a {
 }
 
 .preloader-spinner {
-  left: 60%;
+  left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -1022,6 +1022,12 @@ footer .copyright a {
 
 .loader-content {
   width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .custom_input {
