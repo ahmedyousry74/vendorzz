@@ -5,5 +5,4 @@
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/all.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
-<script src="assets/js/mixitup.min.js"></script>
 <script src="assets/js/main.js"></script>

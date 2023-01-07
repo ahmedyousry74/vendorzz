@@ -1,275 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <style>
-/* wizard */
-
-#heading {
-    text-transform: uppercase;
-    color: var(--primary-color);
-    font-weight: normal
-}
-
-#msform {
-    text-align: center;
-    position: relative;
-    margin-top: 20px
-}
-
-#msform fieldset {
-    /* background: white; */
-    border: 0 none;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding-bottom: 20px;
-    position: relative
-}
-
-.form-card {
-    text-align: right
-}
-
-#msform fieldset:not(:first-of-type) {
-    display: none
-}
-
-#msform input,
-#msform textarea {
-        /* padding: 8px 15px 8px 15px;
-        border: 1px solid #ccc;
-        border-radius: 0px; */
-    /* margin-bottom: 25px; */
-    /* margin-top: 2px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: montserrat;
-    color: #2C3E50;
-    background-color: #ECEFF1;
-    font-size: 16px;
-    letter-spacing: 1px */
-}
-
-#msform input:focus,
-#msform textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid var(--primary-color);
-    outline-width: 0
-}
-
-#msform .action-button {
-    width: 100px;
-    background: var(--primary-color);
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 0px 10px 5px;
-    float: right
-}
-
-#msform .action-button:hover,
-#msform .action-button:focus {
-    background-color: var(--primary-color)
-}
-
-#msform .action-button-previous {
-    width: 100px;
-    background: #616161;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px 10px 0px;
-    float: left
-}
-
-#msform .action-button-previous:hover,
-#msform .action-button-previous:focus {
-    background-color: #000000
-}
-
-.card {
-    z-index: 0;
-    border: none;
-    position: relative
-}
-
-.fs-title {
-    font-size: 25px;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    font-weight: normal;
-    text-align: right
-}
-
-.purple-text {
-    color: var(--primary-color);
-    font-weight: normal
-}
-
-.steps {
-    font-size: 25px;
-    color: gray;
-    margin-bottom: 10px;
-    font-weight: normal;
-    text-align: left
-}
-
-.fieldlabels {
-    color: gray;
-    text-align: right
-}
-
-#progressbar {
-    margin-bottom: 30px;
-    overflow: hidden;
-    color: lightgrey;
-    margin-bottom: 30px;
-    overflow: hidden;
-    color: lightgrey;
-    display: flex;
-    justify-content: center;
-}
-
-#progressbar .active {
-    color: var(--primary-color)
-}
-
-#progressbar li {
-    list-style-type: none;
-    font-size: 15px;
-    width: 50%;
-    float: right;
-    position: relative;
-    font-weight: 400
-}
-
-#progressbar #account:before {
-    font-family: FontAwesome;
-    content: "\f007"
-}
-
-#progressbar #personal:before {
-    font-family: FontAwesome;
-    content: "\f007"
-}
-
-#progressbar #payment:before {
-    /* font-family: FontAwesome;
-    content: "\f00c" */
-}
-
-#progressbar #confirm:before {
-    /* font-family: FontAwesome;
-    content: "\f030" */
-}
-
-#progressbar li:before {
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
-    display: block;
-    font-size: 20px;
-    color: #ffffff;
-    background: lightgray;
-    border-radius: 50%;
-    margin: 0 auto 10px auto;
-    padding: 2px;
-    z-index: 26;
-    position: inherit;
-}
-
-#progressbar li:after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: lightgray;
-    position: absolute;
-    right: 0;
-    top: 25px;
-    z-index: 0
-}
-
-#progressbar li.active:before,
-#progressbar li.active:after {
-    background: var(--primary-color)
-}
-
-.progress {
-    height: 20px
-}
-
-.progress-bar {
-    background-color: var(--primary-color)
-}
-
-.counter__increment, .counter__decrement {
-        transition: all 0.4s ease-in-out;
-    }
-
-.counter {
-  position: relative;
-  width: 7.5rem;
-  height: 1.875rem;
-  border: 1px solid #ced4da;
-  border-radius: 3px;
-  text-align: center;
-  overflow: hidden;
-}
-.counter__input {
-  border: none;
-  height: 100%;
-  margin: 0 auto;
-  text-align: center;
-  color: #2f3640;
-  font-size: 0.875rem;
-  background-color: transparent;
-}
-.counter__increment, .counter__decrement {
-  position: absolute;
-  top: 0;
-  font-size: 1rem;
-  line-height: 1.5625rem;
-  height: 1.875rem;
-  width: 2.1875rem;
-  font-weight: normal;
-  color: #2f3640;
-  text-decoration: none;
-}
-.counter__increment:hover, .counter__increment:active, .counter__increment:focus, .counter__decrement:hover, .counter__decrement:active, .counter__decrement:focus {
-  color: #2f3640;
-  text-decoration: none;
-  background-color: #edeff0;
-}
-.counter__increment {
-  right: 0;
-  border-left: 1px solid #ced4da;
-}
-.counter__decrement {
-  left: 0;
-  top: 0;
-  border-right: 1px solid #ced4da;
-  line-height: 1.6875rem;
-}
-
-.input-group input{
-    height: 38px !important;
-}
-label{
-    color: var(--third-color)
-}
-    </style>
-
-
-
 <?php include 'includes/head.php';?>
 
 <body class="theme">
@@ -277,144 +7,355 @@ label{
     <?php include 'includes/inside-navbar.php';?>
 
     <!-- start wizard form -->
-    <div class="wizard_foorm pt-5">
+    <div class="wizard_form pt-5">
         <div class="container">
             <h2 class="section_title">
-                عمل فرصة
+                شراء مباشر
             </h2>
             <div class="wrapper">
-
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="assets/images/Risk management-pana.svg">
-                </div>
-                <div class="col-md-6">
+                <div class="row">
+                    <!-- <div class="col-md-6">
+                        <img src="assets/images/Risk management-pana.svg">
+                    </div> -->
+                    <div class="col-md-12">
                         <form id="msform">
                             <!-- progressbar -->
                             <ul id="progressbar">
-                                <li class="active" id="account"><strong>معلومات شخصية</strong></li>
-                                <li id="personal"><strong> بيانات الصنف </strong></li>
+                                <li class="active" id="account"><strong>معلومات عامة</strong></li>
+                                <li id="personal"><strong>  معلومات التسليم </strong></li>
+                                <li id="personal"><strong>  معايير الأهلية </strong></li>
+                                <li id="personal"><strong> نطاق العمل   </strong></li>
+                                <li id="personal"><strong>  معلومات التواصل   </strong></li>
                             </ul>
                             <div class="progress">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div> <br> <!-- fieldsets -->
+                            </div> <br> 
+                            <!-- fieldsets -->
                             <fieldset>
                                 <div class="form-card">
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="form-floating mb-3">
-                                                    <input type="text" class="form-control custom_input" placeholder="الإسم">
-                                                    <label for="floatingPassword"> الإسم </label>
+                                                    <input type="text" class="form-control custom_input" placeholder="عنوان الفرصة">
+                                                    <label for="addressForsah"> عنوان الفرصة </label>
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-floating mb-3">
-                                                    <input type="number" class="form-control custom_input" placeholder="الهاتف المحمول">
-                                                    <label for="floatingPassword"> الهاتف المحمول </label>
+                                                    <input type="number" class="form-control custom_input" placeholder="رقم المراجعة الداخلي">
+                                                    <label for="referenceNumber"> رقم المراجعة الداخلي </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <span class="title_span">خيارات إغلاق فرصة *</span>
+                                                <div class="d-flex justify-content-start gap-5 align-items-start flex-row mb-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">تاريخ الإغلاق</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">الحد المسموح لتقديم الأسعار</label>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group mb-3 mt-3">
+                                                    <input type="date" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                                <div>
+                                                    <span class="note"> <i class="fas fa-arrow-left"></i>  ستغلق الفرصة في حد أقصى في  27/11/2020 </span>
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <div class="form-floating mb-3">
-                                                    <input type="email" class="form-control custom_input" placeholder="البريد الإلكتروني">
-                                                    <label for="floatingPassword"> البريد الإلكرتوني </label>
-                                                </div>
+                                                <select class="form-select mb-3" aria-label="Default select example">
+                                                    <option selected disabled>مدة الدفع</option>
+                                                    <option value="1">الدفع عند التسليم</option>
+                                                    <option value="2">1 - 30 يوم</option>
+                                                    <option value="3">30 - 60 يوم</option>
+                                                    <option value="3">+60 يوم</option>
+                                                </select>
                                             </div>
-                                            <div class="col-12">
-                                                <div class="form-floating mb-3">
-                                                    <input type="text" class="form-control custom_input" placeholder="العنوان">
-                                                    <label for="floatingPassword"> العنوان </label>
+                                            <div class="col-12 mb-3">
+                                                <span class="title_span"> المستندات المطلوبة *</span>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
+                                                    <label class="form-check-label" for="flexCheckChecked1">
+                                                        شهادة زكاة 
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" >
+                                                    <label class="form-check-label" for="flexCheckChecked2">
+                                                        شهادة عدم محكومية
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" >
+                                                    <label class="form-check-label" for="flexCheckChecked3">
+                                                        The finanical report for 2023
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" >
+                                                    <label class="form-check-label" for="flexCheckChecked4">
+                                                        New  
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <input type="button" name="next" class="next action-button" value="التالي" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- start saved address -->
+                                                <section class="saved_address_page">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="section_title mb-2 wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.5s">
+                                                                    <h2 class=""> العناوين المحفوظة </h2>
+                                                                    <nav aria-label="breadcrumb">
+                                                                        <ol class="breadcrumb">
+                                                                            <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                                                                            <li class="breadcrumb-item active" aria-current="page">العناوين المحفوظة</li>
+                                                                        </ol>
+                                                                    </nav>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="wrraper_address">
+                                                                <div class="saved_address">
+                                                                    <h6> العناوين المحفوظة (3) </h6>
+                                                                    <div class="saved_address_item">
+                                                                        <label for="" class="active saved_address_item_label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.5s">
+                                                                            <input type="radio"  name="" id="">
+                                                                            <div class="saved_address_item_info ">
+                                                                                <ul>
+                                                                                    <li class="saved_address_email">Yousry@gmail.com</li>
+                                                                                    <li class="saved_address_phone">0123456789</li>
+                                                                                    <li class="saved_address_region"> المنطقة : الرياض</li>
+                                                                                    <li class="saved_address_city"> المدينة : الحي الرابع </li>
+                                                                                    <li class="saved_address_post">الرمز البريدى : 125366</li>
+                                                                                </ul>
+                                                                                <div class="d-flex">
+                                                                                    <div class="flex-grow-1 ms-3">
+                                                                                        <h5>أحمد يسري </h5>
+                                                                                        <span>فيلا رقم 11 , الرياض , حى الروضة , الرياض , السعودية
+                                                                                            فيلا
+                                                                                            رقم 11 , الرياض , حى الروضة , الرياض , السعودية</span>
+                                                                                        <div class="action">
+                                                                                            <button><i class="fas fa-trash-alt"></i></button>
+                                                                                            <button data-bs-toggle="modal" data-bs-target="#editaddress" style="position: relative;z-index:999"><i class="fas fa-edit"></i></button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </label>
+                                                                        <label for="" class=" saved_address_item_label wow fadeInRight" data-wow-duration="0.9s" data-wow-delay="0.6s">
+                                                                            <input type="radio" name="" id="">
+                                                                            <div class="saved_address_item_info">
+                                                                                <ul>
+                                                                                    <li class="saved_address_email">Yousry@gmail.com</li>
+                                                                                    <li class="saved_address_phone">0123456789</li>
+                                                                                    <li class="saved_address_region"> المنطقة : الرياض</li>
+                                                                                    <li class="saved_address_city"> المدينة : الحي الرابع </li>
+                                                                                    <li class="saved_address_post">الرمز البريدى : 125366</li>
+                                                                                </ul>
+                                                                                <div class="d-flex">
+                                                                                    <div class="flex-grow-1 ms-3">
+                                                                                        <h5>أحمد يسري </h5>
+                                                                                        <span>فيلا رقم 11 , الرياض , حى الروضة , الرياض , السعودية
+                                                                                            فيلا
+                                                                                            رقم 11 , الرياض , حى الروضة , الرياض , السعودية</span>
+                                                                                        <div class="action">
+                                                                                            <button><i class="fas fa-trash-alt"></i></button>
+                                                                                            <button data-bs-toggle="modal" data-bs-target="#editaddress" style="position: relative;z-index:999"><i class="fas fa-edit"></i></button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </label>
+                                                                        <button type="button" class="btn__custom__two w-100 hvr-sweep-to-right"
+                                                                            data-bs-toggle="modal" data-bs-target="#addaddress"> اضافة
+                                                                            عنوان جديد 
+                                                                        </button>
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            <!-- end saved address -->
+                                        </div>
+                                    </div>
                                 </div>
                                 <input type="button" name="next" class="next action-button" value="التالي" />
+                                <input type="button" name="previous" class="previous action-button-previous" value="السابق" />
                             </fieldset>
                             <fieldset>
                                 <div class="form-card">
                                     <div class="row">
                                         <div class="col-12">
-                                            <label class="mb-2" style="color:var(--third-color)"> شهادة ذكاة </label>
-                                            <div class="input-group mb-3">
-                                                <input type="file" class="form-control custom_input" id="inputGroupFile02">
-                                            </div>
+                                            <select class="form-select mb-3" aria-label="Default select example">
+                                                <option selected disabled> القطاع </option>
+                                                <option value="1"> 1 </option>
+                                                <option value="2">2 </option>
+                                                <option value="3">3 </option>
+                                                <option value="3">4 </option>
+                                            </select>
                                         </div>
                                         <div class="col-12">
-                                            <label class="mb-2" style="color:var(--third-color)"> خلو طرف من الضرائب</label>
-                                            <div class="input-group mb-3">
-                                                <input type="file" class="form-control custom_input" id="inputGroupFile02">
-                                            </div>
+                                            <select class="form-select mb-3" aria-label="Default select example">
+                                                <option selected disabled> عمر المنشأت </option>
+                                                <option value="1"> لا يهم </option>
+                                                <option value="2">1 - 5 سنوات</option>
+                                                <option value="3">5 - 10 سنوات</option>
+                                                <option value="3">+10 سنوات</option>
+                                            </select>
                                         </div>
                                         <div class="col-12">
-                                            <label class="mb-2" style="color:var(--third-color)"> اخر تقرير مالي </label>
-                                            <div class="input-group mb-3">
-                                                <input type="file" class="form-control custom_input" id="inputGroupFile02">
-                                            </div>
+                                            <select class="form-select mb-3" aria-label="Default select example">
+                                                <option selected disabled> رأس مالها </option>
+                                                <option value="1"> أقل من 100 ألف </option>
+                                                <option value="2"> أكثر من 100 ألف </option>
+                                            </select>
                                         </div>
-                                        <div class="col-12">
-                                            <label class="mb-2" style="color:var(--third-color)"> اخر تقرير مالي </label>
-                                            <div class="input-group mb-3">
-                                                <input type="file" class="form-control custom_input" id="inputGroupFile02">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-holder mb-3">
-                                                <select class="form-select custom_input" aria-label="Default select example">
-                                                    <option selected>طريقة الدفع </option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="next action-button" value="التالي" />
+                                <input type="button" name="previous" class="previous action-button-previous" value="السابق" />
+                            </fieldset>
+                            <fieldset>                                    
+                                    <div class="form-card">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <select class="form-select mb-3" aria-label="Default select example">
+                                                    <option selected disabled> اختيار قيمة الفرصة  </option>
+                                                    <option value="1"> 0 - 100 ألف</option>
+                                                    <option value="2"> 100 ألف - 200 ألف</option>
+                                                    <option value="2"> 200+ ألف</option>
                                                 </select>
                                             </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-holder mb-3">
-                                                <select class="form-select custom_input" aria-label="Default select example">
-                                                    <option selected> مدة التسليم</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
+                                            <div class="nation__">
+                                                <div class="col-12">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control custom_input" placeholder=" إسم الوحدة ">
+                                                        <label for="nationName">  إسم الوحدة </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control custom_input" placeholder=" الكمية ">
+                                                        <label for="Quantity"> الكمية  </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <select class="form-select mb-3" aria-label="Default select example">
+                                                        <option selected disabled> نوع الوحدة </option>
+                                                        <option value="1"> صندوق </option>
+                                                        <option value="2"> حبة </option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-floating mb-3">
+                                                        <textarea type="text" class="form-control custom_input" placeholder=" الوصف "></textarea>
+                                                        <label for="addressForsah"> الوصف  </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="upload_file d-flex justify-content-start flex-column align-items-start gap-2 mb-3">
+                                                        <span>   المرفقات  <span style="color: red;">*</span></span>
+                                                        <button class="btn btn__custom__two hvr-sweep-to-right"> اختر الملف <i class="fas fa-file-upload"></i> </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button class="next action-button w-100" type="button" > إضافة وحدة <i class="fas fa-plus"></i> </button>
+                                                </div>
                                             </div>
                                         </div>
+                                    </div>
+                                <input type="button" name="next" class="next action-button" value="التالي" />
+                                <input type="button" name="previous" class="previous action-button-previous" value="السابق" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <div class="row">
                                         <div class="col-md-12">
-                                            <div class="form-holder mb-3">
-                                                <select class="form-select custom_input" aria-label="Default select example">
-                                                    <option selected>القطاعات</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="mt-3 mb-3">
-                                                <div class="wrap">
-                                                <label>العدد</label>
-                                                <div class="counter">
-                                                    <input class="counter__input" type="text" value="1" name="counter" size="5" readonly="readonly"/>
-                                                    <a class="counter__increment">+</a>
-                                                    <a class="counter__decrement">-</a>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="mb-3 mt-3">
-                                                <div class="wrap">
-                                                <label>الكمية</label>
-                                                <div class="counter">
-                                                    <input class="counter__input" type="text" value="1" name="counter" size="5" readonly="readonly"/>
-                                                    <a class="counter__increment">+</a>
-                                                    <a class="counter__decrement">-</a>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-floating mb-3">                            
-                                                <textarea class="custom_input form-control" placeholder="المواصفات" style="width:100%"></textarea>
-                                                <label for="floatingPassword"> المواصفات </label>
-                                            </div>
+                                            <!-- start saved address -->
+                                                <section class="saved_address_page">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="section_title mb-2 wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.5s">
+                                                                    <h2 class=""> العناوين المحفوظة </h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="wrraper_address">
+                                                                <div class="saved_address">
+                                                                    <h6> العناوين المحفوظة (3) </h6>
+                                                                    <div class="saved_address_item">
+                                                                        <label for="" class="active saved_address_item_label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.5s">
+                                                                            <input type="radio"  name="" id="">
+                                                                            <div class="saved_address_item_info ">
+                                                                                <ul>
+                                                                                    <li class="saved_address_email">Yousry@gmail.com</li>
+                                                                                    <li class="saved_address_phone">0123456789</li>
+                                                                                    <li class="saved_address_region"> المنطقة : الرياض</li>
+                                                                                    <li class="saved_address_city"> المدينة : الحي الرابع </li>
+                                                                                    <li class="saved_address_post">الرمز البريدى : 125366</li>
+                                                                                    <li class="saved_address_post"> المنصب : دكتور </li>
+                                                                                </ul>
+                                                                                <div class="d-flex">
+                                                                                    <div class="flex-grow-1 ms-3">
+                                                                                        <h5>أحمد يسري </h5>
+                                                                                        <span>فيلا رقم 11 , الرياض , حى الروضة , الرياض , السعودية
+                                                                                            فيلا
+                                                                                            رقم 11 , الرياض , حى الروضة , الرياض , السعودية</span>
+                                                                                        <div class="action">
+                                                                                            <button><i class="fas fa-trash-alt"></i></button>
+                                                                                            <button data-bs-toggle="modal" data-bs-target="#editaddress" style="position: relative;z-index:999"><i class="fas fa-edit"></i></button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </label>
+                                                                        <label for="" class=" saved_address_item_label wow fadeInRight" data-wow-duration="0.9s" data-wow-delay="0.6s">
+                                                                            <input type="radio" name="" id="">
+                                                                            <div class="saved_address_item_info">
+                                                                                <ul>
+                                                                                    <li class="saved_address_email">Yousry@gmail.com</li>
+                                                                                    <li class="saved_address_phone">0123456789</li>
+                                                                                    <li class="saved_address_region"> المنطقة : الرياض</li>
+                                                                                    <li class="saved_address_city"> المدينة : الحي الرابع </li>
+                                                                                    <li class="saved_address_post">الرمز البريدى : 125366</li>
+                                                                                    <li class="saved_address_post"> المنصب : دكتور </li>
+                                                                                </ul>
+                                                                                <div class="d-flex">
+                                                                                    <div class="flex-grow-1 ms-3">
+                                                                                        <h5>أحمد يسري </h5>
+                                                                                        <span>فيلا رقم 11 , الرياض , حى الروضة , الرياض , السعودية
+                                                                                            فيلا
+                                                                                            رقم 11 , الرياض , حى الروضة , الرياض , السعودية</span>
+                                                                                        <div class="action">
+                                                                                            <button><i class="fas fa-trash-alt"></i></button>
+                                                                                            <button data-bs-toggle="modal" data-bs-target="#editaddress" style="position: relative;z-index:999"><i class="fas fa-edit"></i></button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </label>
+                                                                        <button type="button" class="btn__custom__two w-100 hvr-sweep-to-right"
+                                                                            data-bs-toggle="modal" data-bs-target="#addContact"> اضافة
+                                                                             جهة اتصال 
+                                                                        </button>
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            <!-- end saved address -->
                                         </div>
                                     </div>
                                 </div>
@@ -422,6 +363,118 @@ label{
                                 <input type="button" name="previous" class="previous action-button-previous" value="السابق" />
                             </fieldset>
                         </form>         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+<!-- Modal add address -->
+    <div class="modal fade" id="addaddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">اضافة عنوان جديد</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form_auth">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control custom_input" placeholder=" العنوان">
+                                                <label for="Address">  العنوان </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control custom_input" placeholder=" اسم المدينة">
+                                                <label for="City">  اسم المدينة </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="map mb-3">
+                                                <h3> العنوان على الخريطة </h3>
+                                                <p> الرياض , الحى السابع , مسجد عباد الرحمن </p>
+                                                <div class="ratio ratio-16x9">
+                                                    <iframe
+                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927755.0519899436!2d46.262027123739045!3d24.72539808840737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1657282815810!5m2!1sen!2seg"
+                                                        style="border:0;" allowfullscreen="" loading="lazy"
+                                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control custom_input" placeholder=" الإرشادات ">
+                                                <label for="notes">  الإرشادات  </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn__custom__two w-100 hvr-sweep-to-right w-100 mt-3"> إضافة
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- modal for add contact -->
+<div class="modal fade" id="addContact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">اضافة جهة اتصال جديدة </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form_auth">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control custom_input" placeholder=" الإسم">
+                                                <label for="name">  الإسم </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control custom_input" placeholder=" المنصب">
+                                                <label for="Address">  المنصب </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control custom_input" placeholder=" العنوان">
+                                                <label for="Address">  العنوان </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="number" class="form-control custom_input" placeholder=" الجوال">
+                                                <label for="number">  الجوال </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn__custom__two w-100 hvr-sweep-to-right w-100 mt-3"> إضافة
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

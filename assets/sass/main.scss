@@ -2,7 +2,7 @@
 @import './core/_buttons.sass';
 @import './core/_card.sass';
 @import './core/_forms.sass';
-@import './core/_popups.sass';
+@import './core/_popups.scss';
 @import './core/_tables.sass';
 @import './core/_breadcrumb.sass';
 @import './core/_navbar.scss';
@@ -12,7 +12,7 @@
 @import './core/_footer.scss';
 @import './core/_preloader.scss';
 @import './core/_input.scss';
-@import './core/_wizard-form.scss';
+@import './core/_wizardForm.scss';
 @import './helpers/_mixins.sass';
 @import './themes/_var_theme.sass';
 @import './components/_home.scss';
