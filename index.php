@@ -284,7 +284,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <a href="">
+                        <a href="forsah-details.php">
                             <div class="latest-info wow fadeIn"
                             data-wow-duration="0.8" data-wow-delay="1.2s">
                                 <div class="latest-top d-flex justify-content-between align-items-start flex-row flex-wrap">
@@ -358,7 +358,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <a href="">
+                        <a href="forsah-details.php">
                             <div class="latest-info wow fadeIn"
                             data-wow-duration="1" data-wow-delay="1.2s">
                                 <div class="latest-top d-flex justify-content-between align-items-start flex-row flex-wrap">
@@ -395,7 +395,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <a href="">
+                        <a href="forsah-details.php">
                             <div class="latest-info wow fadeIn"
                             data-wow-duration="1.1" data-wow-delay="1.2s">
                                 <div class="latest-top d-flex justify-content-between align-items-start flex-row flex-wrap">
@@ -432,7 +432,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <a href="">
+                        <a href="forsah-details.php">
                             <div class="latest-info wow fadeIn"
                             data-wow-duration="1.2" data-wow-delay="1.2s">
                                 <div class="latest-top d-flex justify-content-between align-items-start flex-row flex-wrap">
@@ -469,7 +469,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <a href="">
+                        <a href="forsah-details.php">
                             <div class="latest-info wow fadeIn"
                             data-wow-duration="1.3" data-wow-delay="1.2s">
                                 <div class="latest-top d-flex justify-content-between align-items-start flex-row flex-wrap">
