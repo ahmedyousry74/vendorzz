@@ -1596,6 +1596,16 @@ label.active {
   padding: 20px;
 }
 
+.gender {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.namozk {
+  color: var(--primary-color);
+  padding: 15px;
+}
+
 .theme {
   --primary-color: #186db5;
   --second-color: #0f487d;
@@ -2163,6 +2173,10 @@ header .video-icon .btn-icon:after {
 
 .profile .nav-tabs.check {
   border-bottom: 0;
+}
+
+.profile .section_title {
+  margin-top: 25px;
 }
 
 .forsah {

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ar">
     <?php include 'includes/head.php';?>
+    <?php include 'includes/script.php';?>
+
 <body class="theme">
     <?php include 'includes/top-navbar.php';?>
     <?php include 'includes/navbar.php';?>
@@ -505,6 +507,7 @@
                             </div>
                         </a>
                     </div>
+                    <a href="all-forsah.php" class="btn__custom__two hvr-bounce-to-right m-auto text-center" style="width:200px"> المزيد </a>
                 </div>
             </div>
         </section>
@@ -678,8 +681,6 @@
         </section>
     <!-- end sponsers -->
 
-    <?php include 'includes/footer.php';?>
-
     <!-- start preloader -->
         <div class="preloader">
             <div class="preloader-spinner">
@@ -691,16 +692,8 @@
             </div>                                                                      
         </div>                                                      
     <!-- start preloader --> 
-    <?php include 'includes/script.php';?>
+    <?php include 'includes/footer.php';?>
 
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/all.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/mixitup.min.js"></script>
-    <script src="assets/js/main.js"></script>
     <script>
         document.onreadystatechange = function() {
             if (document.readyState !== "complete") {

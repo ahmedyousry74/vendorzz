@@ -269,9 +269,9 @@
                                                         <button class="btn btn__custom__two hvr-sweep-to-right"> اختر الملف <i class="fas fa-file-upload"></i> </button>
                                                     </div>
                                                 </div>
-                                                <div class="col-12">
-                                                    <button class="next action-button w-100" type="button" > إضافة وحدة <i class="fas fa-plus"></i> </button>
-                                                </div>
+                                            </div>
+                                            <div class="col-12" style="opacity:1 !important;display:block !important">
+                                                <button class="next action-button w-100 copy" type="button" > إضافة وحدة <i class="fas fa-plus"></i> </button>
                                             </div>
                                         </div>
                                     </div>
@@ -593,6 +593,17 @@ $(".counter__increment, .counter__decrement").click(function(e)
 
 });
     </script>
+
+<script>
+    // clone and add btn delete
+        $(".copy").click(function(){
+            $(".nation__").eq(0).clone().insertAfter(".nation__:last");
+            $(".nation__:last").append("<button class='remove'>delete</button>");              
+        });
+        $(document).on("click", ".remove", function() {
+            $(this).closest(".nation__").remove();                                                                            
+        });
+</script>
 
 </body>
 
