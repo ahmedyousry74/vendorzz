@@ -138,6 +138,50 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12">
+                        <div class="orders"> <!-- خاص ب طلبات المشتري -->
+                            <h6> <i class="fas fa-sort-amount-up-alt"></i> قائمة الطلبات </h6>
+                            <div class="order_list">
+                                <h4> تم طلب (.....) عن طريق المورد <span> محمد </span> وقام بـ تسعير الوحدة رقم 546651  </h4>
+                                <button class="btn btn-success"  type="button"> موافقة </button>
+                                <button class="btn btn-danger" type="button"> رفض </button>
+                            </div>
+                            <div class="order_list">
+                                <h4> تم طلب (.....) عن طريق المورد <span> محمد </span> وقام بـ تسعير الوحدة رقم 546651  </h4>
+                                <button class="btn btn-success"  type="button"> موافقة </button>
+                                <button class="btn btn-danger" type="button"> رفض </button>
+                            </div>
+                            <div class="order_list">
+                                <h4> تم طلب (.....) عن طريق المورد <span> محمد </span> وقام بـ تسعير الوحدة رقم 546651  </h4>
+                                <button class="btn btn-success"  type="button"> موافقة </button>
+                                <button class="btn btn-danger" type="button"> رفض </button>
+                            </div>
+                            <div class="order_list">
+                                <h4> تم طلب (.....) عن طريق المورد <span> محمد </span> وقام بـ تسعير الوحدة رقم 546651  </h4>
+                                <button class="btn btn-success"  type="button"> موافقة </button>
+                                <button class="btn btn-danger" type="button"> رفض </button>
+                            </div>
+                            <div class="order_list">
+                                <h4> تم طلب (.....) عن طريق المورد <span> محمد </span> وقام بـ تسعير الوحدة رقم 546651  </h4>
+                                <button class="btn btn-success"  type="button"> موافقة </button>
+                                <button class="btn btn-danger" type="button"> رفض </button>
+                            </div>
+                            <div class="order_list">
+                                <h4> تم طلب (.....) عن طريق المورد <span> محمد </span> وقام بـ تسعير الوحدة رقم 546651  </h4>
+                                <button class="btn btn-success"  type="button"> موافقة </button>
+                                <button class="btn btn-danger" type="button"> رفض </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="orders"> <!-- خاص ب طلبات المورد -->
+                            <h6> <i class="fas fa-sort-amount-up-alt"></i> قائمة الطلبات </h6>
+                            <div class="order_list">
+                                <h4> لقد قمت ب تقديم طلب لدى (...) والخ والخ </h4>
+                                <button class="btn btn-danger" type="button"> إلغاء </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

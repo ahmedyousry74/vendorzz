@@ -2473,4 +2473,37 @@ header .video-icon .btn-icon:after {
   font-weight: bold;
   font-size: 16px;
 }
+
+.forsah_details .orders {
+  padding-top: 25px;
+}
+
+.forsah_details .orders h6 {
+  margin-bottom: 25px;
+}
+
+.forsah_details .orders .order_list {
+  padding: 25px 0 5px 0;
+  position: relative;
+}
+
+.forsah_details .orders .order_list::after {
+  position: absolute;
+  content: "";
+  background-color: #414042;
+  width: 100%;
+  top: 0px;
+  right: 0;
+  height: 1px;
+}
+
+.forsah_details .orders .order_list h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.forsah_details .orders .order_list button {
+  padding: 10px;
+  margin-top: 20px;
+}
 /*# sourceMappingURL=main.css.map */
