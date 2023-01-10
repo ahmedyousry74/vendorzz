@@ -2444,4 +2444,33 @@ header .video-icon .btn-icon:after {
   color: #fff;
   padding: 10px;
 }
+
+.forsah_details h6 {
+  color: var(--primary-color);
+  font-size: 18px;
+  -webkit-text-stroke-width: medium;
+}
+
+.forsah_details .nation_sec {
+  border: 1px #e6e7e8 solid;
+  padding: 10px;
+}
+
+.forsah_details .nation_sec h5 {
+  font-weight: 400;
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.forsah_details .nation_sec p {
+  color: #414042;
+}
+
+.forsah_details .nation_sec span {
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
 /*# sourceMappingURL=main.css.map */

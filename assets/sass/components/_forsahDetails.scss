@@ -171,4 +171,28 @@
             }
         }
     }
+    h6{
+        color: var(--primary-color);
+        font-size: 18px;
+        -webkit-text-stroke-width: medium;
+    }
+    .nation_sec{
+        border: 1px #e6e7e8 solid;
+        padding: 10px;
+        h5{
+            font-weight: 400;
+            display: block;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        p{
+            color: #414042;
+        }
+        span{
+            color: var(--primary-color);
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
 }

@@ -53,6 +53,81 @@
                             <li> <i class="fas fa-cog"></i> قيمة الفرصة: <span>صغيرة جدا</span> </li>
                         </ul>
                     </div>
+                    <div class="col-12">
+                        <h6> قائمة الوحدات </h6>
+                        <div class="nation_sec">
+                            <div class="d-flex justify-content-between align-items-start flex-row">
+                                <div>
+                                    <h5>تجهيز العاب لفعالية بريه</h5>
+                                    <p>تحدي الكهرباء</p>
+                                </div>
+                                <div class="text-center">
+                                    <span>1</span>
+                                    <p>طاولة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nation_sec">
+                            <div class="d-flex justify-content-between align-items-start flex-row">
+                                <div>
+                                    <h5>تجهيز العاب لفعالية بريه</h5>
+                                    <p>تحدي الكهرباء</p>
+                                </div>
+                                <div class="text-center">
+                                    <span>1</span>
+                                    <p>طاولة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nation_sec">
+                            <div class="d-flex justify-content-between align-items-start flex-row">
+                                <div>
+                                    <h5>تجهيز العاب لفعالية بريه</h5>
+                                    <p>تحدي الكهرباء</p>
+                                </div>
+                                <div class="text-center">
+                                    <span>1</span>
+                                    <p>طاولة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nation_sec">
+                            <div class="d-flex justify-content-between align-items-start flex-row">
+                                <div>
+                                    <h5>تجهيز العاب لفعالية بريه</h5>
+                                    <p>تحدي الكهرباء</p>
+                                </div>
+                                <div class="text-center">
+                                    <span>1</span>
+                                    <p>طاولة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nation_sec">
+                            <div class="d-flex justify-content-between align-items-start flex-row">
+                                <div>
+                                    <h5>تجهيز العاب لفعالية بريه</h5>
+                                    <p>تحدي الكهرباء</p>
+                                </div>
+                                <div class="text-center">
+                                    <span>1</span>
+                                    <p>طاولة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nation_sec">
+                            <div class="d-flex justify-content-between align-items-start flex-row">
+                                <div>
+                                    <h5>تجهيز العاب لفعالية بريه</h5>
+                                    <p>تحدي الكهرباء</p>
+                                </div>
+                                <div class="text-center">
+                                    <span>1</span>
+                                    <p>طاولة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-12">
                         <div class="forsah_pdf">
                             <h4>نطاق العمل وتفاصيل المكاتب</h4>
