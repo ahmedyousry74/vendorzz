@@ -139,6 +139,9 @@
                         </div>
                     </div>
                     <div class="col-12">
+                        <button class="Submit d-block m-auto" data-bs-toggle="modal" data-bs-target="#submitChance"> تقديم على الفرصة </button>
+                    </div>
+                    <div class="col-12">
                         <div class="orders"> <!-- خاص ب طلبات المشتري -->
                             <h6> <i class="fas fa-sort-amount-up-alt"></i> قائمة الطلبات </h6>
                             <div class="order_list">
@@ -187,6 +190,35 @@
         </div>
     </div>
     <!-- end forsah details -->
+
+    <!-- Modal choose chance -->
+    <div class="modal fade" id="submitChance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">تقديم على فرصة</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form style="width: 100%">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control custom_input" placeholder=" ادخل  سعر ">
+                                    <label for="price"> ادخل  سعر  </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                    <button type="button" class="btn btn-primary">تقديم </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal choose chance -->
 
 
     <?php include 'includes/footer.php';?>

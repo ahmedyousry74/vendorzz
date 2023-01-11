@@ -2506,4 +2506,10 @@ header .video-icon .btn-icon:after {
   padding: 10px;
   margin-top: 20px;
 }
+
+.forsah_details .Submit {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+}
 /*# sourceMappingURL=main.css.map */

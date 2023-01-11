@@ -238,35 +238,37 @@
                                                 </select>
                                             </div>
                                             <div class="nation__">
-                                                <div class="col-12">
-                                                    <div class="form-floating mb-3">
-                                                        <input type="text" class="form-control custom_input" placeholder=" إسم الوحدة ">
-                                                        <label for="nationName">  إسم الوحدة </label>
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control custom_input" placeholder=" إسم الوحدة ">
+                                                            <label for="nationName">  إسم الوحدة </label>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-floating mb-3">
-                                                        <input type="text" class="form-control custom_input" placeholder=" الكمية ">
-                                                        <label for="Quantity"> الكمية  </label>
+                                                    <div class="col-md-3">
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control custom_input" placeholder=" الكمية ">
+                                                            <label for="Quantity"> الكمية  </label>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <select class="form-select mb-3" aria-label="Default select example">
-                                                        <option selected disabled> نوع الوحدة </option>
-                                                        <option value="1"> صندوق </option>
-                                                        <option value="2"> حبة </option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-floating mb-3">
-                                                        <textarea type="text" class="form-control custom_input" placeholder=" الوصف "></textarea>
-                                                        <label for="addressForsah"> الوصف  </label>
+                                                    <div class="col-md-3">
+                                                        <select class="form-select mb-3" aria-label="Default select example">
+                                                            <option selected disabled> نوع الوحدة </option>
+                                                            <option value="1"> صندوق </option>
+                                                            <option value="2"> حبة </option>
+                                                        </select>
                                                     </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="upload_file d-flex justify-content-start flex-column align-items-start gap-2 mb-3">
-                                                        <span>   المرفقات  <span style="color: red;">*</span></span>
-                                                        <button class="btn btn__custom__two hvr-sweep-to-right"> اختر الملف <i class="fas fa-file-upload"></i> </button>
+                                                    <div class="col-md-3">
+                                                        <div class="form-floating mb-3">
+                                                            <textarea type="text" class="form-control custom_input" placeholder=" الوصف "></textarea>
+                                                            <label for="addressForsah"> الوصف  </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="upload_file d-flex justify-content-start flex-column align-items-start gap-2 mb-3">
+                                                            <span>   المرفقات  <span style="color: red;">*</span></span>
+                                                            <button class="btn btn__custom__two hvr-sweep-to-right"> اختر الملف <i class="fas fa-file-upload"></i> </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
