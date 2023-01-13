@@ -82,9 +82,18 @@
                                 </select>
                             </div>
                             <div class="col-md-4">
+                                <select class="form-select mb-3" aria-label="Default select example">
+                                    <option>القطاع</option>
+                                    <option value="1" selected disabled> الخدمات الزراعية </option>
+                                    <option value="2"> معدات و صيانة </option>
+                                    <option value="3">أجهزة كهربائية</option>
+                                    <option value="3"> تأمين السيارات </option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
                                 <span class="d-block gender"> الجنس </span>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" selected>
                                     <label class="form-check-label" for="inlineRadio1">ذكر</label>
                                 </div>
                                 <div class="form-check form-check-inline">
@@ -99,8 +108,8 @@
                                     <label class="form-check-label" for="inlineRadio1">فرد</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">منشأة</label>
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" selected>
+                                    <label class="form-check-label" for="inlineRadio2" >منشأة</label>
                                 </div>
                             </div>
                         </div>
@@ -112,8 +121,8 @@
                         <div class="row">
                             <ul class="nav nav-tabs check d-flex justify-content-center gap-3 flex-wrap mb-3" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        value="option1" id="identity-tab" data-bs-toggle="tab" data-bs-target="#identity">
+                                    <input class="form-check-input active" type="radio" name="inlineRadioOptions"
+                                        value="option1" id="identity-tab" data-bs-toggle="tab" data-bs-target="#identity" checked>
                                     <label class="form-check-label" for="inlineRadio1">الهوية الوطنية</label>
                                 </li>
                                 <li class="nav-item" role="presentation">
@@ -123,7 +132,7 @@
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show" id="identity" role="tabpanel" aria-labelledby="identity-tab">
+                                <div class="tab-pane fade show active" id="identity" role="tabpanel" aria-labelledby="identity-tab">
                                     <div class="col-12">
                                         <span> الرجاء تحميل <button class="namozk"> <i class="fas fa-download"></i> نموذج التفويض </button> </span>
                                     </div>
@@ -134,7 +143,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <h6> تاريخ الميلاد الهجري </h6>
+                                        <h6> تاريخ الميلاد الميلادي </h6>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-floating mb-3">
@@ -156,7 +165,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <h6> تاريخ الميلاد الهجري </h6>
+                                        <h6> تاريخ الميلاد الميلادي </h6>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-floating mb-3">
@@ -178,22 +187,22 @@
                             <ul class="nav nav-tabs check d-flex justify-content-center gap-3 flex-wrap mb-3" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        value="option1" id="facilities-tab" data-bs-toggle="tab" data-bs-target="#facilities">
-                                    <label class="form-check-label" for="inlineRadio1"> اضافة مؤسسة </label>
+                                        value="option1" id="facilities-tab" data-bs-toggle="tab" data-bs-target="#facilities" checked>
+                                    <label class="form-check-label" for="option1"> اضافة مؤسسة </label>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                     id="company-tab" data-bs-toggle="tab" data-bs-target="#company" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">اضافة شركة</label>
+                                    <label class="form-check-label" for="option2">اضافة شركة</label>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                     id="Establishment-tab" data-bs-toggle="tab" data-bs-target="#Establishment" value="option3">
-                                    <label class="form-check-label" for="inlineRadio2">اضافة منشأت اخرى</label>
+                                    <label class="form-check-label" for="option3">اضافة منشأت اخرى</label>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show" id="facilities" role="tabpanel" aria-labelledby="facilities-tab">
+                                <div class="tab-pane fade show active" id="facilities" role="tabpanel" aria-labelledby="facilities-tab">
                                     <div class="col-md-12 mb-3">
                                         <span class="d-block gender"> اضافة منشأة </span>
                                         <div class="form-check form-check-inline">
@@ -279,8 +288,8 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating mb-3">
-                                        <input type="date" class="form-control custom_input" placeholder=" اسم المنشأة بالعربي  ">
-                                        <label for="Quantity">  اسم المنشأة بالعربي   </label>
+                                        <input type="date" class="form-control custom_input" placeholder=" اسم المنشأة بالأنجليزية  ">
+                                        <label for="Quantity">  اسم المنشأة بالأنجليزية   </label>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -310,12 +319,6 @@
                                         <option value="2">نشاط 2 </option>
                                         <option value="2">نشاط 3 </option>
                                     </select>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating mb-3">
-                                        <input type="date" class="form-control custom_input" placeholder=" الكمية ">
-                                        <label for="Quantity"> تاريخ الميلاد  </label>
-                                    </div>
                                 </div>
                             </div>
                         </div>

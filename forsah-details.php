@@ -208,6 +208,18 @@
                                     <label for="price"> ادخل  سعر  </label>
                                 </div>
                             </div>
+                            <div class="col-12">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control custom_input" placeholder=" اكتب العرض ">
+                                    <label for="price"> اكتب العرض </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control custom_input" placeholder=" اكتب ملاحظة">
+                                    <label for="price" >اكتب ملاحظة  </label>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>

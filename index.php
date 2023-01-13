@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar">
     <?php include 'includes/head.php';?>
-    <?php include 'includes/script.php';?>
 
 <body class="theme">
     <?php include 'includes/top-navbar.php';?>
@@ -693,6 +692,7 @@
         </div>                                                      
     <!-- start preloader --> 
     <?php include 'includes/footer.php';?>
+    
 
     <script>
         document.onreadystatechange = function() {

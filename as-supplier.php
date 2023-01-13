@@ -94,6 +94,15 @@
                                                                 <option value="3">مدينة 4</option>
                                                             </select>
                                                         </div>
+                                                        <div class="col-md-4">
+                                                            <select class="form-select mb-3" aria-label="Default select example">
+                                                                <option selected disabled>القطاع</option>
+                                                                <option value="1"> الخدمات الزراعية </option>
+                                                                <option value="2"> معدات و صيانة </option>
+                                                                <option value="3">أجهزة كهربائية</option>
+                                                                <option value="3"> تأمين السيارات </option>
+                                                            </select>
+                                                        </div>
                                                         <div class="col-md-4 text-end">
                                                             <span class="d-block gender"> الجنس </span>
                                                             <div class="form-check form-check-inline">
@@ -146,7 +155,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 text-end">
-                                                                <h6> تاريخ الميلاد الهجري </h6>
+                                                                <h6> تاريخ الميلاد الميلادي </h6>
                                                                 <div class="row">
                                                                     <div class="col-md-12">
                                                                         <div class="form-floating mb-3">
@@ -168,7 +177,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 text-end">
-                                                                <h6> تاريخ الميلاد الهجري </h6>
+                                                                <h6> تاريخ الميلاد الميلادي </h6>
                                                                 <div class="row">
                                                                     <div class="col-md-12">
                                                                         <div class="form-floating mb-3">

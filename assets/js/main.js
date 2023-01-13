@@ -1,6 +1,7 @@
 $(document).ready(function () {
   //owl-sponsers
   $(".owl-carousel.owl-sponsers").owlCarousel({
+    navigation : true,
     loop: true,
     margin: 10,
     autoplayTimeout: 2000,
@@ -23,28 +24,24 @@ $(document).ready(function () {
   });
 
   $(".owl-carousel.owl-testimonials").owlCarousel({
+    navigation : true,
     loop: true,
-    center: true,
-    margin: 15,
-    autoplayTimeout: 3000,
+    margin: 10,
+    autoplayTimeout: 2000,
     autoplay: true,
     autoplayHoverPause: true,
-    responsiveClass: true,
+    center: true,
     nav: false,
     rtl: true,
     responsive: {
       0: {
-        items: 1,
-        nav: false,
-      },
-      680: {
         items: 2,
-        nav: false,
-        loop: false,
       },
-      1000: {
+      700: {
         items: 3,
-        nav: true,
+      },
+      1600: {
+        items: 5,
       },
     },
   });
